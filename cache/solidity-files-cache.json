@@ -44,8 +44,8 @@
       ]
     },
     "D:\\Bluechip technologies\\Blockchain dev\\2024\\DAO\\Q_DAO\\Q-boilerplate-code\\contracts\\AirDropV2.sol": {
-      "lastModificationDate": 1721365394708,
-      "contentHash": "d41d8cd98f00b204e9800998ecf8427e",
+      "lastModificationDate": 1721382739676,
+      "contentHash": "f718fcca335d9b1ec76c7d8d5dbced05",
       "sourceName": "contracts/AirDropV2.sol",
       "solcConfig": {
         "version": "0.8.19",
@@ -73,9 +73,17 @@
           }
         }
       },
-      "imports": [],
-      "versionPragmas": [],
-      "artifacts": []
+      "imports": [
+        "@openzeppelin/contracts/proxy/utils/Initializable.sol",
+        "@q-dev/gdk-contracts/interfaces/IDAOResource.sol",
+        "./libs/ACampaignAirDrop.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "AirDropV2"
+      ]
     },
     "D:\\Bluechip technologies\\Blockchain dev\\2024\\DAO\\Q_DAO\\Q-boilerplate-code\\contracts\\GeneralDAOVoting.sol": {
       "lastModificationDate": 1721365394708,
@@ -2709,8 +2717,8 @@
       ]
     },
     "D:\\Bluechip technologies\\Blockchain dev\\2024\\DAO\\Q_DAO\\Q-boilerplate-code\\contracts\\libs\\ACampaignAirDrop.sol": {
-      "lastModificationDate": 1721365394708,
-      "contentHash": "a068468cbf7f05d7a6595edc1a9c1682",
+      "lastModificationDate": 1721382675074,
+      "contentHash": "6f3ff730643efa7e6aaa8c19d32b580c",
       "sourceName": "contracts/libs/ACampaignAirDrop.sol",
       "solcConfig": {
         "version": "0.8.19",
@@ -3189,6 +3197,46 @@
       ],
       "artifacts": [
         "Context"
+      ]
+    },
+    "D:\\Bluechip technologies\\Blockchain dev\\2024\\DAO\\Q_DAO\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\proxy\\utils\\Initializable.sol": {
+      "lastModificationDate": 1721365930707,
+      "contentHash": "5efeb93e6b1c83c754da2846c2da51a7",
+      "sourceName": "@openzeppelin/contracts/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.2"
+      ],
+      "artifacts": [
+        "Initializable"
       ]
     }
   }
