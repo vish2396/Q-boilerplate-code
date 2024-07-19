@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "D:\\Bluechip technologies\\Blockchain dev\\2024\\DAO\\Q_DAO\\Q-boilerplate-code\\contracts\\AirDropV1.sol": {
-      "lastModificationDate": 1721365394708,
-      "contentHash": "d41d8cd98f00b204e9800998ecf8427e",
+      "lastModificationDate": 1721370763262,
+      "contentHash": "58441cf76f98fe223248d85a515a6b3c",
       "sourceName": "contracts/AirDropV1.sol",
       "solcConfig": {
         "version": "0.8.19",
@@ -31,9 +31,17 @@
           }
         }
       },
-      "imports": [],
-      "versionPragmas": [],
-      "artifacts": []
+      "imports": [
+        "@dlsl/dev-modules/access-control/MerkleWhitelisted.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./libs/TokenBalance.sol"
+      ],
+      "versionPragmas": [
+        "0.8.19"
+      ],
+      "artifacts": [
+        "AirDropV1"
+      ]
     },
     "D:\\Bluechip technologies\\Blockchain dev\\2024\\DAO\\Q_DAO\\Q-boilerplate-code\\contracts\\AirDropV2.sol": {
       "lastModificationDate": 1721365394708,
@@ -3063,6 +3071,124 @@
       ],
       "artifacts": [
         "IContractMetadata"
+      ]
+    },
+    "D:\\Bluechip technologies\\Blockchain dev\\2024\\DAO\\Q_DAO\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
+      "lastModificationDate": 1721365930992,
+      "contentHash": "5a20b2cad87ddb61c7a3a6af21289e28",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "D:\\Bluechip technologies\\Blockchain dev\\2024\\DAO\\Q_DAO\\Q-boilerplate-code\\node_modules\\@dlsl\\dev-modules\\access-control\\MerkleWhitelisted.sol": {
+      "lastModificationDate": 1721365899510,
+      "contentHash": "51527fe02b4b76d8385b18634619fb44",
+      "sourceName": "@dlsl/dev-modules/access-control/MerkleWhitelisted.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "MerkleWhitelisted"
+      ]
+    },
+    "D:\\Bluechip technologies\\Blockchain dev\\2024\\DAO\\Q_DAO\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1721365925011,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
       ]
     }
   }
